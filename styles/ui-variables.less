@@ -1,31 +1,55 @@
 /*
-Include the standard variables from Mailspring's base theme:
+Include the standard variables from Mailsprings base theme:
 https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-variables.less
+Based on gruvbox theme https://github.com/morhetz/gruvbox
 */
 @import "base/ui-variables";
 
-@gray-base: #ffffff;
+@light-bg: #3c3836;
+@bg: #282828;
+@dark-bg: #1d2021;
+@light-fg: #fbf1c7;
+@fg: #ebdbb2;
+@dark-fg: #d5c4a1;
+
+@red: #fb4934;
+@green: #b8bb26;
+@yellow: #fabd2f;
+@blue: #83a598;
+@purple: #d3869b;
+@cyan: #8ec07c;
+@orange: #fe8019;
+
+@dark-red: #cc241d;
+@dark-green: #98971a;
+@dark-yellow: #d79921;
+@dark-blue: #458588;
+@dark-purple: #b16286;
+@dark-cyan: #689d6a;
+@dark-orange: #d65d0e;
+
+@gray-base: #928374;
 @gray-darker: darken(@gray-base, 13.5%);
 @gray-dark: darken(@gray-base, 20%);
 @gray: darken(@gray-base, 33.5%);
 @gray-light: darken(@gray-base, 46.7%);
 @gray-lighter: darken(@gray-base, 92.5%);
-@white: #0a0a0a;
+@white: #f9f5d7;
 
-@accent-primary: #58b660;
-@accent-primary-dark: darken(@accent-primary, 10%);
+@accent-primary: @red;
+@accent-primary-dark: @dark-blue;
 
-@background-primary: #212121;
-@background-off-primary: #212121;
-@background-secondary: #121212;
-@background-tertiary: #6d7987;
+@background-primary: @bg;
+@background-off-primary: @bg;
+@background-secondary: @dark-bg;
+@background-tertiary: @light-bg;
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
 @border-color-tertiary: lighten(@background-tertiary, 10%);
 @border-color-divider: @border-color-secondary;
 
-@text-color: #eee;
+@text-color: @light-fg;
 @text-color-subtle: fadeout(@text-color, 20%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
 @text-color-inverse: white;
@@ -38,15 +62,15 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 @text-color-link-active: @accent-primary-dark;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
-@dropdown-default-bg-color: #404040;
+@dropdown-default-bg-color: @bg;
 
-@input-bg: #2e2e2e;
+@input-bg: @background-primary;
 @input-border: @border-color-divider;
 
-@list-bg: #333;
-@list-border: #383838;
+@list-bg: @background-primary;
+@list-border: @border-color-primary;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color;
 
-@toolbar-background-color: #121212;
-@panel-background-color: #121212;
+@toolbar-background-color: @background-primary;
+@panel-background-color: @background-primary;
