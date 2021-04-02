@@ -5,7 +5,7 @@ the [Mailspring](http://www.getmailspring.com/) email client.
 
 Feel free to change the colours in `sytles/ui-variables.less` if you don't like the blue (all the gruvbox colours are available to use)
 
-<img src="https://raw.githubusercontent.com/Fergus-Molloy/Mailspring-gruvbox-theme/master/screenshot/custom-theme.png" />
+<img src="screenshot/custom-theme.png" />
 
 ## Getting Started
 
